@@ -42,6 +42,15 @@ spring:
                 name: PAYMENT-SERVICE
                 fallbackuri: forward:/paymentServiceFallback
 
+okta:
+  oauth2:
+    issuer: https://dev-41763453.okta.com/oauth2/default
+    audience: api://default
+    client-id: 0oagew24a91kPdCov5d7
+    client-secret: 4izJqi3EtP05xxnaEBF2sS_vYA_oRSDFQTVtQ_iQHT09xJQjKdzuzaMe2ORlM-FC
+    scopes: openid, profile, email, offline_access
+
+
 #<!-- Either create a Customizer Bean or use below config for resilience4j -->
 #resilience4j:
 #  circuitbreaker:
